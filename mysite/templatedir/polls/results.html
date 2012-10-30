@@ -1,7 +1,0 @@
-<hl>{{poll.question}}</hl>
-
-<ul>
-{% for choice in poll.choice_set.all %}
-	<li>{{choice.choice }} -- {{choice.votes }} 票</li>
-{% endfor %}
-</ul>
