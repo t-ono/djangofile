@@ -1,0 +1,28 @@
+{% if plotfigure %}
+    <!--{% for poll in latest_poll_list %}
+        <li>{{ poll.question }}</li>
+    {% endfor %}
+    -->
+    <p>
+    解析用プログラム<br>
+    生波形<br>
+    <img src ="./rawsignal.png" />
+    <br>
+    <br>
+    <br>
+	
+    Time-Frequency Map <br>
+    
+    <img src = "./tfmap.png" />
+    <br>
+    <br>
+    <br>
+    
+    Time-Power Plot <br>
+	<img src = "./tpplot.png" />
+    <br>
+	
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+

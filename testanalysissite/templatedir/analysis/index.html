@@ -1,0 +1,17 @@
+<hl> 被験者選択 </hl>
+
+{% if numsub %}
+	<form action="/analysis/selectsub/" method="post">
+	{% csrf_token %}
+	{% for subject in numsub %}
+		<input type = "radio" name="subject" id="subject{{ forloop.counter }}" value="{{subject.id}}" />
+		<label for="subject{{ forloop.counter }}">{{ subject.name }}</label><br />
+	{% endfor %}
+	<input type="submit" value="変更する" />
+	</form>
+	-->
+	
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
